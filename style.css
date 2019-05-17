@@ -1,0 +1,18 @@
+.tasklist {
+  padding-top: 2em;
+}
+
+.task.done {
+  background: lightgreen;
+  border: 2px solid darkgreen;
+}
+
+.task.todo {
+  background: goldenrod;
+  border: 2px solid darkgoldenrod;
+}
+
+.description {
+  color: slategrey;
+  font-style: italic;
+}
