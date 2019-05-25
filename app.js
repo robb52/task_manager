@@ -43,9 +43,10 @@ var app = new Vue({
       return this.tasks.filter( item => item.completed == false );
     },
     nextId: function(){
-      return (this.tasks.sort(function(a,b){ return a.id - b.id; }))[this.tasks.length -1].id + 1;
+      return (this.tasks.sort(function(a,b){ return a.id - b.id; })[this.tasks.length -1].id + 1);
     }
   },
+
   methods: {
     clear: function (){
       this.task = {};
@@ -73,6 +74,8 @@ var app = new Vue({
 
       let newTask = Object.assign({}, this.task);
 
+      let taskId = this.nextId;
+      this.task.id = taskId;
       this.tasks.push(newTask);
       this.clear();
     },
