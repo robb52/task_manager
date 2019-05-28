@@ -7,6 +7,10 @@
   border: 2px solid darkgreen;
 }
 
+.task.done label {
+  text-decoration: line-through;
+}
+
 .task.todo {
   background: goldenrod;
   border: 2px solid darkgoldenrod;
